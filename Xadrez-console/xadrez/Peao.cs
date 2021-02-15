@@ -61,7 +61,8 @@ namespace xadrez
                 if (posicao.linha == 3)
                 {
                     Posicao esquerda = new Posicao(posicao.linha, posicao.coluna - 1);
-                    if (tab.posicaoValida(esquerda) && existeInimigo(esquerda) && tab.peca(esquerda) == partida.vulneravelEnPssant) {
+                    if (tab.posicaoValida(esquerda) && existeInimigo(esquerda) && tab.peca(esquerda) == partida.vulneravelEnPssant)
+                    {
                         mat[esquerda.linha - 1, esquerda.coluna] = true;
                     }
                     Posicao direita = new Posicao(posicao.linha, posicao.coluna + 1);
